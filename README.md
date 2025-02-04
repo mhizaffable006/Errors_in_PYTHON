@@ -12,7 +12,7 @@ Copy code
 # Missing colon in if statement
 if 7 > 4
     print("7 is greater than 4")
-# •	Explanation: Here, the if statement is missing a colon : at the end, causing a SyntaxError.
+•	Explanation: Here, the if statement is missing a colon : at the end, causing a SyntaxError.
 ________________________________________
 
 ## 2. IndentationError
@@ -23,7 +23,7 @@ Copy code
 def my_function():
     print("Hello, my name is Becky!")
    print("Incorrect indentation")
-# •	Explanation: The second print statement has an inconsistent indentation level, resulting in an IndentationError.
+ •	Explanation: The second print statement has an inconsistent indentation level, resulting in an IndentationError.
 ________________________________________
 
 
@@ -33,7 +33,7 @@ ________________________________________
 python
 Copy code
 print(my_variable)
-# •	Explanation: my_variable hasn’t been defined, so attempting to print it causes a NameError.
+ •	Explanation: my_variable hasn’t been defined, so attempting to print it causes a NameError.
 ________________________________________
 ## 4. TypeError
 •	Description: This error occurs when an operation or function is applied to an object of inappropriate type.
@@ -41,7 +41,7 @@ ________________________________________
 python
 Copy code
 result = "9" + 1
-# •	Explanation: This attempts to add a string ("9") to an integer (1), causing a TypeError.
+ •	Explanation: This attempts to add a string ("9") to an integer (1), causing a TypeError.
 ________________________________________
 ## 5. IndexError
 •	Description: This error happens when trying to access an index that is out of range in a list or other indexed data structure.
@@ -50,7 +50,7 @@ python
 Copy code
 my_list = [1, 2, 3]
 print(my_list[5])
-# •	Explanation: The list has only three elements (index 0 to 2), so accessing index 5 raises an IndexError.
+ •	Explanation: The list has only three elements (index 0 to 2), so accessing index 5 raises an IndexError.
 ________________________________________
 
 ## 6. KeyError
@@ -60,7 +60,7 @@ python
 Copy code
 my_dict = {"name": "Rebecca", "age": 26}
 print(my_dict["address"])
-# •	Explanation: The dictionary doesn’t contain the key "address", so this raises a KeyError.
+ •	Explanation: The dictionary doesn’t contain the key "address", so this raises a KeyError.
 ________________________________________
 ## 7. ValueError
 •	Description: This error occurs when a function receives an argument of the correct type but an inappropriate value.
@@ -68,7 +68,7 @@ ________________________________________
 python
 Copy code
 number = int("xyz")
-# •	Explanation: int() expects a string that represents a number, so passing "xyz" raises a ValueError.
+ •	Explanation: int() expects a string that represents a number, so passing "xyz" raises a ValueError.
 ________________________________________
 ## 8. AttributeError
 •	Description: This error occurs when an invalid attribute reference is made for an object (e.g., calling a method that doesn’t exist on an object).
@@ -77,7 +77,7 @@ python
 Copy code
 my_string = "hi"
 my_string.append("!")
-# •	Explanation: Strings don’t have an append method, so this results in an AttributeError.
+ •	Explanation: Strings don’t have an append method, so this results in an AttributeError.
 ________________________________________
 
 ## 9. ZeroDivisionError
@@ -86,7 +86,7 @@ ________________________________________
 python
 Copy code
 result = 10 / 0
-# •	Explanation: Division by zero is undefined, so this raises a ZeroDivisionError.
+ •	Explanation: Division by zero is undefined, so this raises a ZeroDivisionError.
 ________________________________________
 ## 10. ModuleNotFoundError
 •	Description: This error occurs when Python cannot find a specified module.
@@ -94,5 +94,5 @@ ________________________________________
 python
 Copy code
 import non_existent_module
-# •	Explanation: Python attempts to import a module named non_existent_module, which doesn’t exist, resulting in a ModuleNotFoundError.
+ •	Explanation: Python attempts to import a module named non_existent_module, which doesn’t exist, resulting in a ModuleNotFoundError.
 
