@@ -6,12 +6,14 @@ Different errors in Python, their explanation and at least one example each.
 Python has several types of errors that can occur during code execution. Common Python errors are:
 ## 1. SyntaxError
 •	Description: This error occurs when the Python interpreter finds syntax that it doesn’t understand or expects differently. It's a parsing error.
+
 •	Example:
 python
 Copy code
 # Missing colon in if statement
 if 7 > 4
     print("7 is greater than 4")
+
 •	Explanation: Here, the if statement is missing a colon : at the end, causing a SyntaxError.
 ________________________________________
 
@@ -23,6 +25,7 @@ Copy code
 def my_function():
     print("Hello, my name is Becky!")
    print("Incorrect indentation")
+ 
  •	Explanation: The second print statement has an inconsistent indentation level, resulting in an IndentationError.
 ________________________________________
 
@@ -33,6 +36,7 @@ ________________________________________
 python
 Copy code
 print(my_variable)
+ 
  •	Explanation: my_variable hasn’t been defined, so attempting to print it causes a NameError.
 ________________________________________
 ## 4. TypeError
@@ -41,6 +45,7 @@ ________________________________________
 python
 Copy code
 result = "9" + 1
+ 
  •	Explanation: This attempts to add a string ("9") to an integer (1), causing a TypeError.
 ________________________________________
 ## 5. IndexError
@@ -50,6 +55,7 @@ python
 Copy code
 my_list = [1, 2, 3]
 print(my_list[5])
+ 
  •	Explanation: The list has only three elements (index 0 to 2), so accessing index 5 raises an IndexError.
 ________________________________________
 
@@ -60,6 +66,7 @@ python
 Copy code
 my_dict = {"name": "Rebecca", "age": 26}
 print(my_dict["address"])
+ 
  •	Explanation: The dictionary doesn’t contain the key "address", so this raises a KeyError.
 ________________________________________
 ## 7. ValueError
@@ -68,6 +75,8 @@ ________________________________________
 python
 Copy code
 number = int("xyz")
+ 
+ 
  •	Explanation: int() expects a string that represents a number, so passing "xyz" raises a ValueError.
 ________________________________________
 ## 8. AttributeError
@@ -77,6 +86,8 @@ python
 Copy code
 my_string = "hi"
 my_string.append("!")
+ 
+ 
  •	Explanation: Strings don’t have an append method, so this results in an AttributeError.
 ________________________________________
 
@@ -86,6 +97,8 @@ ________________________________________
 python
 Copy code
 result = 10 / 0
+ 
+ 
  •	Explanation: Division by zero is undefined, so this raises a ZeroDivisionError.
 ________________________________________
 ## 10. ModuleNotFoundError
@@ -94,5 +107,6 @@ ________________________________________
 python
 Copy code
 import non_existent_module
+ 
  •	Explanation: Python attempts to import a module named non_existent_module, which doesn’t exist, resulting in a ModuleNotFoundError.
 
